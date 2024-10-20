@@ -68,6 +68,8 @@ service/newgoapp-v1 created
 
 kubectl apply -f newgoapp-ingress-canary.yaml
 
+![alt text](https://github.com/asrafbd/sre_airports_api/blob/main/sre-api-response.jpg?raw=true)
+
 ## 6. CI/CD Pipeline with Jenkinsfile
 
 Need to create a Pipeline project on a Jenkins server and point to the Jenkinsfile in a GitHub repository.
