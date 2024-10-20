@@ -1,0 +1,4 @@
+---
+gcp_project: clgcporg8-056
+gcp_credentials: service-account-key-file.json
+auth_type: serviceaccount
