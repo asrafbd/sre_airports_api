@@ -76,6 +76,8 @@ Need to create a Pipeline project on a Jenkins server and point to the Jenkinsfi
 
 We can use prometheus, kiali and grafana for monitoring response times.
 
+![alt text](https://github.com/asrafbd/sre_airports_api/blob/main/sre-api-response2.jpg?raw=true)
+
 <!-- My thought process and decisions goes here -->
 
 ---
