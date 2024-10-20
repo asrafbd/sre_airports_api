@@ -72,6 +72,10 @@ kubectl apply -f newgoapp-ingress-canary.yaml
 
 Need to create a Pipeline project on a Jenkins server and point to the Jenkinsfile in a GitHub repository.
 
+## 7. Add basic monitoring to track response times for each endpoint
+
+We can use prometheus, kiali and grafana for monitoring response times.
+
 <!-- My thought process and decisions goes here -->
 
 ---
