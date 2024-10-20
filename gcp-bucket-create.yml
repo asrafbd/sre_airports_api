@@ -1,0 +1,18 @@
+- name: Create GCP bucket named airport-images
+  hosts: localhost
+  gather_facts: no
+  vars_files:
+    - vars-gcp.yml
+  tasks:
+    - name: Create GCP bucket
+      google.cloud.gcp_storage_bucket:
+        name: airport-images
+        location: 'US'
+        storage_class: 'STANDARD'
+        state: present
+        project: "{{ gcp_project }}"
+        auth_kind: "{{ auth_type }}"
+        service_account_file: "{{ gcp_credentials }}"
+      register: gcp_bucket
+    - debug:
+        var: gcp_bucket
