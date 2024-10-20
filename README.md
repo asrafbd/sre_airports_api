@@ -2,16 +2,16 @@
 ## Solution
 
 ## 1. Provision a cloud storage bucket using Infrastructure as Code (IaC).
-$ ansible-playbook s3-bucket-create.yml --syntax-check
+$ ansible-playbook gcp-bucket-create.yml --syntax-check
 
-$ ansible-playbook s3-bucket-create.yml
+$ ansible-playbook gcp-bucket-create.yml
 ## 3. Containerize the Go application.
 
 $ cd sre_airports_api
 
 $ vi Dockerfile
 
-FROM golang:1.21.0
+FROM golang:1.23.0
 
 #Set the Current Working Directory inside the container
 
